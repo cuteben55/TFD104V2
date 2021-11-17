@@ -1,0 +1,287 @@
+@import url(./hamburgers.css);
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0 ;
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #3883d8;
+
+
+}
+img{
+  max-width: 100%;
+}
+
+
+
+.header {
+  width: 100%;  
+  position: fixed;
+  transform: translatex(-50%);
+  left:50%;
+  z-index: 99;
+
+  margin: 0 auto;
+  background-color:  rgba(21, 4, 124, 1);
+  z-index: 3;
+  display: block;
+  /* border: 5px solid red; */
+
+}
+
+button.btn_switch{
+  display: none;
+  
+}
+/* 行動版時，將按鈕顯示出來 */
+@media screen and (max-width: 768px){
+  button.btn_switch{
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    display: inline-block;
+    z-index: 99;
+  }
+}
+ul a {
+text-decoration: none;
+  color: black;
+}
+
+.header_menu {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;  
+
+
+}
+
+
+.header h1 {
+  margin: 0;
+  font-size: 100%;
+}
+div.header_menu h1 img {
+padding-top: 5px;
+
+}
+
+.nav_list {
+  display: flex;
+  width: 100%;
+  padding:0;
+}
+
+@media screen and (min-width: 900px){
+  nav{
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  nav{
+    display: none;
+  }
+}
+
+
+  
+
+
+
+@media screen and (max-width: 767px){
+  ul.nav_list {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:-20px;
+    right: 0px;
+    width: 100%;
+    z-index: 99;
+    color: black;
+    background-color: #3883d8;
+  }
+}
+
+ 
+
+ul.nav_list > li {
+  position: relative;
+  transition: .5s;
+  list-style: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 41px;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap;
+  list-style: none;
+
+}
+
+
+
+.nav_list li a {
+  padding: 0 15px;
+  color: #FFFFFF;
+
+}
+
+.nav_list li  i{
+  padding: 0px;
+  color: #FFFFFF;
+
+}
+.nav_list li::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.nav_list li:nth-child(2){
+  padding: 0 20px;
+}
+.nav_list li:hover {
+  background-color: #b02914;
+}
+
+.nav_list li:hover::after {
+  left: 0;
+  right: 0;
+}
+
+
+ul.submenu{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+  
+  /* 第二步 */
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 40px;
+  width: 105px;
+
+  z-index: 50;
+} 
+
+ul.submenu-item> li
+{
+  list-style: none !important;
+  width: 150px;
+  
+}
+
+li:hover ul.submenu{
+  display: block;
+  list-style: none !important;
+
+
+}
+
+
+
+
+.header__frame {
+  left: 0;
+  z-index: 10;
+  display: block;
+  height: 26px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+}
+.header__frame__side {
+  height: 69.23076%;
+  width: 100%;
+  background: url("../../Home/asset/images/frame/g-nav-frame-pt.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto 100%;
+}
+
+.header__frame__center {
+  width: 890px;
+  height: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background: url("../../Home/asset/images/frame/g-nav-frame-center.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+  .g-header__frame__center {
+    width: 100%;
+    background-size: 100% auto;
+  }
+}
+
+@media only screen and (max-width: 900px){
+.g-header__frame {
+    bottom: -10px;
+    height: 13px;
+}
+.g-header__frame__center {
+  width: 445px;
+
+}
+}
+
+@media only screen and (max-width: 1100px) {
+  .g-header__frame {
+    bottom: -15px;
+    height: 18.2px;
+  }
+  .g-header__frame__center {
+    width: 623px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .g-header__frame {
+    bottom: -17px;
+    height: 20.8px;
+  }
+  .g-header__frame__center {
+    width: 712px;
+  }
+}
+
+
+/* go to top */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 210px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

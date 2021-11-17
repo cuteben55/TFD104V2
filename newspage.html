@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>可瑞特實驗室</title>
+    <link rel="stylesheet" href="./css/newspage.css">
+    <link rel="stylesheet" href="./css/Common/header.css">
+    <link href="./css/css/all.css" rel="stylesheet">
+    <link rel="icon" href="./Home/asset/Logo/C_favicon.svg">
+
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <div class="header_menu">
+        <h1><a href="index.html"><img src="./Home/asset/Logo/header_logo.svg" alt="這是Logo"></a></h1>
+
+          <nav class="main-nav" id="main-nav">
+              <ul class="nav_list">
+                <li> <a href="News.html">News</a> </li>
+  
+                  <li>   <a href="Story.html">Story</a>
+                        <ul  class="submenu" >
+                              <li>  <a   href="Character.html">角色介紹</a> </li>
+                        </ul>
+                  </li>
+   
+                <li> <a href="About.html">About</a> </li>
+                <li> <a href="Store.html">商城</a> </li>
+                <li> <a href="Recruit.html">招募</a> </li>
+                <li> <a href="#"><i class="fas fa-search"></i></a>  </li>
+                <li> <a href="#"><i class="fas fa-address-card"></i></a></i> </li>
+                <li> <a href="#"><i class="fas fa-shopping-cart"></i></a> </li>
+              </ul>
+            </nav>
+            
+            <button  class="hamburger hamburger--squeeze  btn_switch" type="button">
+              <span class="hamburger-box btn_switch">
+                <span class="hamburger-inner" btn_switch></span>
+              </span>
+            </button>
+        </div>
+        <div class="header__frame">
+          <div class="header__frame__side"></div>
+          <div class="header__frame__center"></div>
+          <div class="header__frame__side"></div>
+        </div>
+        
+      </header>
+
+   <main>
+            <div class="ifo_title">
+                <h1 class="ifo_bar"><a href="News.html"><i class="fas fa-angle-double-left"></i>Back</a>
+                  News/場景更新 漆黑電流之塔
+                </h1>
+               <div class="article">
+                            <img src="./News/stage 3.png">
+                            <h1 class="title">場景更新 漆黑電流之塔</h1>
+                            <p>
+
+                                    雷電人 的專屬舞台，因著場地加成的效果，
+                                    可瑞特將如臨大敵！<br>隨機出現的高壓電流
+                                    只要觸碰到就會造成大量傷害......<br><br>
+
+                                    雷電人關卡:<br>
+                                    在雷電人的關卡中，電流和閃電會阻礙可瑞特前進。<br>
+                                    然而，只要仔細觀察，必能發現前進的路徑。<br>別錯過一瞬的空隙，突破關卡吧！
+                        </p>
+                 </div>
+          
+    
+           </div>
+          
+ </main>
+
+ <div class="more_info">        
+  <!-- social media -->
+  <h1 class="ifo">更多資訊：</h1>   
+
+  <div class="wrapper">
+
+    <div class="icon facebook">
+      <div class="tooltip">Facebook</div>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </div>
+    <div class="icon twitter">
+      <div class="tooltip">Twitter</div>
+      <span><i class="fab fa-twitter"></i></span>
+    </div>
+    <div class="icon instagram">
+      <div class="tooltip">Instagram</div>
+      <span><i class="fab fa-instagram"></i></span>
+    </div>
+    <div class="icon github">
+      <div class="tooltip">Github</div>
+      <span><i class="fab fa-github"></i></span>
+    </div>
+    <div class="icon youtube">
+      <div class="tooltip">Youtube</div>
+      <span><i class="fab fa-youtube"></i></span>
+    </div>
+  </div>        
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<footer class="footer">  
+© All rights reserved
+<img src="./Home/asset/Logo/footer_logo.svg">
+<p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。參考資源:洛克人11。若有侵權疑慮，您可以私訊[緯育TibaMe]，後續會由專人協助處理  </p>
+
+</footer> 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script>
+   let burger = document.getElementById('burger'),
+	 nav    = document.getElementById('main-nav'),
+	 slowmo = document.getElementById('slowmo');
+
+burger.addEventListener('click', function(e){
+	this.classList.toggle('is-open');
+	nav.classList.toggle('is-open');
+});
+
+slowmo.addEventListener('click', function(e){
+	this.classList.toggle('is-slowmo');
+});
+
+/* Onload demo - dirty timeout */
+let clickEvent = new Event('click');
+
+window.addEventListener('load', function(e) {
+	slowmo.dispatchEvent(clickEvent);
+	burger.dispatchEvent(clickEvent);
+	
+	setTimeout(function(){
+		burger.dispatchEvent(clickEvent);
+		
+		setTimeout(function(){
+			slowmo.dispatchEvent(clickEvent);
+		}, 3500);
+	}, 5500);
+});
+ </script> 
+ 
+ <script >
+
+     //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+// 導覽列縮合
+$(function(){
+  
+  // 點擊按鈕，選單縮放
+  $("button.btn_switch").on("click", function(){
+    $("nav").slideToggle();
+  });
+  
+});
+
+$(function(){
+  
+  // hamburger icon 的切換
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+  });
+
+});
+
+ </script>
+  </body>
+
+  </html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>可瑞特實驗室</title>
+    <link rel="stylesheet" href="./css/News.css">
+    <link rel="stylesheet" href="./css/Common/header.css">
+    <link href="./css/css/all.css" rel="stylesheet">
+    <link rel="icon" href="./Home/asset/Logo/C_favicon.svg">
+
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <div class="header_menu">
+        <h1><a href="index.html"><img src="./Home/asset/Logo/header_logo.svg" alt="這是Logo"></a></h1>
+  
+          <nav>
+              <ul class="nav_list">
+                <li> <a href="News.html">News</a> </li>
+  
+                  <li>   <a href="Story.html">Story</a>
+                        <ul  class="submenu" >
+                              <li>  <a   href="Character.html">角色介紹</a> </li>
+                        </ul>
+                  </li>
+   
+                <li> <a href="About.html">About</a> </li>
+                <li> <a href="Store.html">商城</a> </li>
+                <li> <a href="Recruit.html">招募</a> </li>
+                <li> <a href="#"><i class="fas fa-search"></i></a>  </li>
+                <li> <a href="#"><i class="fas fa-address-card"></i></a></i> </li>
+                <li> <a href="#"><i class="fas fa-shopping-cart"></i></a> </li>
+              </ul>
+            </nav>
+            <button class="hamburger hamburger--squeeze  btn_switch" type="button">
+              <span class="hamburger-box btn_switch">
+                <span class="hamburger-inner" btn_switch></span>
+              </span>
+            </button>
+        </div>
+        <div class="header__frame">
+          <div class="header__frame__side"></div>
+          <div class="header__frame__center"></div>
+          <div class="header__frame__side"></div>
+        </div>
+        
+      </header>
+
+   <main>
+     
+          <section class="banner">
+            <div class="title">
+              <p>Latest</p>
+              <p>News</p>
+            </div>
+                <img src="./News/banner.svg">
+          </section>
+        
+          <section class="event_block">
+            <div class="filter">
+              <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')"> News</button>
+                <button class="btn" onclick="filterSelection('animals')"> report</button>
+              </div>
+              
+            <a href="./newspage.html"> 
+              <div class="container">
+              <div class="filterDiv animals"><img src="./News/update.png" alt="">
+                <h1>2021.11.15 更新內容</h1>
+                <p>除了遊戲本篇之外，還收錄能挑戰時間<br>競速等任務，跟全球玩家爭奪排名的<br>「Challenge」......
+                </p>
+              
+              </div></a> 
+            
+              <a href="./newspage.html"> 
+
+                <div class="filterDiv animals"><img src="./News/SpeedRun.png" alt="">
+                  <h1>  Speed Run 百萬獎金等你拿</h1>
+                  <p>挑戰最速通關滿足你的求勝欲！追求刺激<br>的同時還有百萬獎金等你拿，快來參<br>加活動......
+                  </p>
+                </div>
+              </a> 
+
+
+              <a href="./newspage.html"> 
+
+                <div class="filterDiv cars"><img src="./News/stage.png">
+                  <h1>  場景更新 漆黑電流之塔 </h1>
+                  <p>雷電人的專屬舞台，因著場地加成的效果，<br>
+                    可瑞特將如臨大敵！隨機出現的高壓電流<br>
+                    只要觸碰到就會造成大量傷害......</p>
+                </div>
+
+              </a> 
+
+              <a href="./newspage.html"> 
+
+                <div class="filterDiv cars">
+                  <img src="./News/shark.png" alt="">
+                  <h1>鯊魚人登場 首次加入新角色</h1>
+                  <p>海上霸主鯊魚人登場！銳利的獠牙正緊<br>盯著獵物，一但獵物觸發了鯊魚人<br>的雷達......
+                  </p>
+                </div>
+        
+                  
+              </a> 
+
+              </div>
+              
+       </div>         
+                
+          </section>
+          
+ </main>
+
+
+ <div class="more_info">                       
+  <h1 class="ifo">更多資訊：</h1>   
+   <div class="wrapper">
+
+     <div class="icon facebook">
+       <div class="tooltip">Facebook</div>
+       <span><i class="fab fa-facebook-f"></i></span>
+     </div>
+     <div class="icon twitter">
+       <div class="tooltip">Twitter</div>
+       <span><i class="fab fa-twitter"></i></span>
+     </div>
+     <div class="icon instagram">
+       <div class="tooltip">Instagram</div>
+       <span><i class="fab fa-instagram"></i></span>
+     </div>
+     <div class="icon github">
+       <div class="tooltip">Github</div>
+       <span><i class="fab fa-github"></i></span>
+     </div>
+     <div class="icon youtube">
+       <div class="tooltip">Youtube</div>
+       <span><i class="fab fa-youtube"></i></span>
+     </div>
+   </div>        
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<footer class="footer">  
+<img src="./Home/asset/Logo/footer_logo.svg">
+
+© All rights reserved
+<p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，
+本平台僅供學習、展示之用。參考資源:洛克人11。若有侵權疑慮，您可以私訊[緯育TibaMe]，後續會由專人協助處理  </p>
+
+</footer> 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ <script src="./News/news.js"></script>
+  </body>
+
+  </html>
